@@ -118,6 +118,7 @@ pub struct IconButtonProps<S: IconShape + 'static> {
 /// The child elements are optional, and are there so you can add some
 /// additional text or other HTML to the button.
 #[allow(non_snake_case)]
+#[component]
 pub fn IconButton<S: IconShape>(props: IconButtonProps<S>) -> Element {
     let disabled = props.disabled;
     let onclick = props.onclick;
@@ -182,6 +183,7 @@ pub struct IconProps<S: IconShape + 'static> {
 /// See the [`IconProps`] field documentation for details on the properties it
 /// accepts.
 #[allow(non_snake_case)]
+#[component]
 pub fn Icon<S: IconShape>(props: IconProps<S>) -> Element {
     let fill = if props.disabled {
         props.disabled_fill
