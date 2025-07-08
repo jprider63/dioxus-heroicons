@@ -9,7 +9,7 @@ license = "Apache-2.0 OR MIT"
 edition = "2018"
 
 [dependencies]
-dioxus = { git = "https://github.com/jprider63/dioxus.git", rev="612d510d2cb194c1da9c216629ba6bb88f74006c", features = ["html"] }
+dioxus = { git = "https://github.com/jprider63/dioxus.git", rev="cd3ff6d3644347163c249da8293a76db02044d03", features = ["html"] }
 
 [workspace]
 members = ["gen"]
